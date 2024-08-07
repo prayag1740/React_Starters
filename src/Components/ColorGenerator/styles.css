@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+}
+
+.button-grp {
+    margin-top: 20px;
+    display: flex;
+}
+
+button {
+    width: auto;
+    margin-right: 5px;
+}
+
+h2, h1 {
+    color: white;
+}
