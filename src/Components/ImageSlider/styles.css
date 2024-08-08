@@ -1,0 +1,41 @@
+.hide-current-image {
+    display: none;
+}
+
+.current-image {
+    width: 500px;
+    height: 350px;
+}
+
+.is-container {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    align-items: center;
+}
+
+.circle-indicators {
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.current-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.inactive {
+    background-color: grey;
+}
+
+.arrow {
+    width: 50px;
+    height: 30px;
+    filter: drop-shadow(0px 0px 5px #555);
+}
