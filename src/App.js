@@ -8,6 +8,7 @@ import LoadMoreData from './Components/LoadMoreData'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import TreeView from './Components/TreeView'
 import  {menus } from './Components/TreeView/data'
+import QrCodeGenerator from './Components/QrCodeGenerator'
 
 function App() {
   return (
@@ -22,10 +23,12 @@ function App() {
       <ImageSlider url={"https://dummyjson.com/products"} />
       <NewPage message={"click here for load more data project"} color = {"#d73b19"} navigate = {'/load-more-data'} />
       <NewPage message={"click here for Tree View project"} color = {"#4C3356"} navigate = {'/tree-view'} />
+      <NewPage message={"click here for Qr Code Generator Project"} color = {"#47a262"} navigate = {'/qr-code'} />
         </>
       } />
         <Route path='/load-more-data' element={<LoadMoreData />} />
         <Route path='tree-view' element={<TreeView menus={menus} />} />
+        <Route path='/qr-code' element={<QrCodeGenerator menus={menus} />} />
         </Routes>
     </div>
     </Router>
