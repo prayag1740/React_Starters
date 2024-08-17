@@ -12,6 +12,7 @@ import QrCodeGenerator from './Components/QrCodeGenerator'
 import ThemeSwitch from './Components/ThemeSwitch'
 import LightdarkMode from './Components/LightDarkMode'
 import ScrollIndicator from './Components/Scroll-Indicator'
+import Tabs from './Components/Tabs'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <ThemeSwitch />
       {/* <LightdarkMode /> */}
       <NewPage message={"click here for Scroll Indicator Project"} color = {"#9a47a2"} navigate = {'/scroll-indicator'} />
+      <Tabs />
         </>
       } />
         <Route path='/load-more-data' element={<LoadMoreData />} />
