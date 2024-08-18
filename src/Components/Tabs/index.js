@@ -9,10 +9,6 @@ function Tabs() {
         selectButton(event.target.id)
     }
 
-    const button1 = () => {
-        return <div>Button 1 Text</div>
-    }
-
   return (
     <div className='tab-container'>
         <div className='button-container'>

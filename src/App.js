@@ -13,6 +13,7 @@ import ThemeSwitch from './Components/ThemeSwitch'
 import LightdarkMode from './Components/LightDarkMode'
 import ScrollIndicator from './Components/Scroll-Indicator'
 import Tabs from './Components/Tabs'
+import CustomModal from './Components/CustomModal'
 
 function App() {
   return (
@@ -32,12 +33,14 @@ function App() {
       {/* <LightdarkMode /> */}
       <NewPage message={"click here for Scroll Indicator Project"} color = {"#9a47a2"} navigate = {'/scroll-indicator'} />
       <Tabs />
+      <NewPage message={"click here for Custom Modal Project"} color = {"#ec1d68"} navigate = {'/custom-modal'} />
         </>
       } />
         <Route path='/load-more-data' element={<LoadMoreData />} />
         <Route path='tree-view' element={<TreeView menus={menus} />} />
         <Route path='/qr-code' element={<QrCodeGenerator menus={menus} />} />
         <Route path='/scroll-indicator' element={<ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />} />
+        <Route path='/custom-modal' element={<CustomModal />} />
         </Routes>
     </div>
     </Router>
