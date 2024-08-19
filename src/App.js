@@ -14,6 +14,7 @@ import LightdarkMode from './Components/LightDarkMode'
 import ScrollIndicator from './Components/Scroll-Indicator'
 import Tabs from './Components/Tabs'
 import CustomModal from './Components/CustomModal'
+import GitHubProfile from './Components/GithubProfile'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <NewPage message={"click here for Scroll Indicator Project"} color = {"#9a47a2"} navigate = {'/scroll-indicator'} />
       <Tabs />
       <NewPage message={"click here for Custom Modal Project"} color = {"#ec1d68"} navigate = {'/custom-modal'} />
+      <NewPage message={"click here for Github Profile Page Project"} color = {"#1dece6"} navigate = {'/github-profile'} />
         </>
       } />
         <Route path='/load-more-data' element={<LoadMoreData />} />
@@ -41,6 +43,7 @@ function App() {
         <Route path='/qr-code' element={<QrCodeGenerator menus={menus} />} />
         <Route path='/scroll-indicator' element={<ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />} />
         <Route path='/custom-modal' element={<CustomModal />} />
+        <Route path='/github-profile' element={<GitHubProfile />} />
         </Routes>
     </div>
     </Router>
