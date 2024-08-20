@@ -36,9 +36,8 @@ export default function GitHubProfile() {
             <input type='text' value={userName} onChange={handleUserName} placeholder='Search Github Username' />
             <button onClick={() => getUserGithubData(userName)}>Search</button>
         </div>
-
         {
-            userName !== '' ? <User userData={userData} /> : null
+             userData && <User userData={userData}/>
         }
     </div>
   )

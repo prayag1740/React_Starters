@@ -3,6 +3,12 @@ import "./gitprofile.css"
 
 export default function User({userData}) {
 
+  if (!userData.username) {
+    return null ;
+  }
+
+  console.log(userData);
+
     const date = new Date(userData.joined)
     const dateformated = date.getDate() + "/" + date.getMonth() +"/" + date.getFullYear();
 
