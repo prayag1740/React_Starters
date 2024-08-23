@@ -1,0 +1,37 @@
+.tcc-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.tcc-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.tcc-row {
+    display: flex;
+    gap: 0px;
+}
+
+.tcc-sec {
+    width: 100px;
+    height: 100px;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.game-text {
+    font-weight: bold;
+    font-size: large;
+    color: green;
+}

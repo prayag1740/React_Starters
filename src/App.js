@@ -16,6 +16,7 @@ import Tabs from './Components/Tabs'
 import CustomModal from './Components/CustomModal'
 import GitHubProfile from './Components/GithubProfile'
 import SearchAutoComplete from './Components/SearchAutocomplete'
+import TicTacToe from './Components/TicTacToe'
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <NewPage message={"click here for Custom Modal Project"} color = {"#ec1d68"} navigate = {'/custom-modal'} />
       <NewPage message={"click here for Github Profile Page Project"} color = {"#1dece6"} navigate = {'/github-profile'} />
       <NewPage message={"click here for Search Autocomplete Project"} color = {"#b7b52f"} navigate = {'/search-autocomplete'} />
+      <NewPage message={"click here for Search TicTacToe Project"} color = {"#e84b74"} navigate = {'/tictactoe'} />
         </>
       } />
         <Route path='/load-more-data' element={<LoadMoreData />} />
@@ -47,6 +49,7 @@ function App() {
         <Route path='/custom-modal' element={<CustomModal />} />
         <Route path='/github-profile' element={<GitHubProfile />} />
         <Route path='/search-autocomplete' element={<SearchAutoComplete />} />
+        <Route path='/tictactoe' element={<TicTacToe />} />
         </Routes>
     </div>
     </Router>
