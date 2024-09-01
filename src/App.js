@@ -17,6 +17,8 @@ import CustomModal from './Components/CustomModal'
 import GitHubProfile from './Components/GithubProfile'
 import SearchAutoComplete from './Components/SearchAutocomplete'
 import TicTacToe from './Components/TicTacToe'
+import FeatureFlags from './Components/FeatureFlag'
+import FeatureFlagGlobalState from './Components/FeatureFlag/context'
 
 function App() {
   return (
@@ -40,6 +42,7 @@ function App() {
       <NewPage message={"click here for Github Profile Page Project"} color = {"#1dece6"} navigate = {'/github-profile'} />
       <NewPage message={"click here for Search Autocomplete Project"} color = {"#b7b52f"} navigate = {'/search-autocomplete'} />
       <NewPage message={"click here for Search TicTacToe Project"} color = {"#e84b74"} navigate = {'/tictactoe'} />
+      <FeatureFlagGlobalState><FeatureFlags /></FeatureFlagGlobalState>
         </>
       } />
         <Route path='/load-more-data' element={<LoadMoreData />} />
@@ -53,6 +56,7 @@ function App() {
         </Routes>
     </div>
     </Router>
+    
   )
 }
 
