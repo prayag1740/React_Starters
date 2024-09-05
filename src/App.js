@@ -19,6 +19,9 @@ import SearchAutoComplete from './Components/SearchAutocomplete'
 import TicTacToe from './Components/TicTacToe'
 import CustomCompUseFetch from './Components/useFetch'
 import OutsideClick from './Components/OutsideClick'
+import WindowResizeHook from './Components/WindowResizeHook'
+import ScrollTopBottom from './Components/ScrollTopBottom'
+import Scrollsection from './Components/ScrollTopBottom/scrollsection'
 
 function App() {
   return (
@@ -44,6 +47,9 @@ function App() {
       <NewPage message={"click here for Search TicTacToe Project"} color = {"#e84b74"} navigate = {'/tictactoe'} />
       <NewPage message={"click here for Custom UseFetch Hook"} color = {"#b7b52f"} navigate = {'/usefetch'} />
       <NewPage message={"click here for Custom UserOutsideClick Hook"} color = {"#ec1d68"} navigate = {'/outsideclick'} />
+      <NewPage message={"click here for Custom WindowResize Hook"} color = {"#9a47a2"} navigate = {'/windowresize'} />
+      <NewPage message={"click here for Scroll Top Bottom Project"} color = {"#e84b74"} navigate = {'/scrolltopbottom'} />
+      <NewPage message={"click here for Scroll Section Project"} color = {"#d73b19"} navigate = {'/scrollsection'} />
         </>
       } />
         <Route path='/load-more-data' element={<LoadMoreData />} />
@@ -56,6 +62,9 @@ function App() {
         <Route path='/tictactoe' element={<TicTacToe />} />
         <Route path='/usefetch' element={<CustomCompUseFetch /> } />
         <Route path='/outsideclick' element={<OutsideClick /> } />
+        <Route path='/windowresize' element={<WindowResizeHook /> } />
+        <Route path='/scrolltopbottom' element={<ScrollTopBottom /> } />
+        <Route path='/scrollsection' element={<Scrollsection /> } />
         </Routes>
     </div>
     </Router>
